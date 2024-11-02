@@ -25,6 +25,7 @@ class Pessoa:
         else:
             return 'Obesidade grau 3!'
 
+# Iniciando em entrando com os dados
 print('**** CALCULADORA IMC ****')
 print('')
 nome = input('Digite seu nome: ')
@@ -34,4 +35,5 @@ peso = float(input('Digite seu peso: '))
 pessoa = Pessoa(nome, altura, peso)
 imc = pessoa.calculoDoImc()
 classificacao = pessoa.classificacaoDoImc()
+
 print(f"{pessoa.nome} tem um IMC de {imc:.2f}, que é classificado como: {classificacao}")
